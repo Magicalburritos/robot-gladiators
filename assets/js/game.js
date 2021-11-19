@@ -19,7 +19,6 @@ var getPlayerName = function () {
 // player info
 
 var playerInfo = {
-  name: getPlayerName(),
   health: 100,
   attack: 10,
   money: 10,
@@ -153,11 +152,6 @@ var fight = function (enemy) {
     }
   }
 };
-
-// main function of the game it resets player health and while there are enemies remaiining it assigns
-// them a randomvalue of helth and sends that object to fight of skup which the plyer
-// then decides if they want to fight or skip
-// after a battle you can either go to the shop or you loose the game
 
 var startGame = function () {
   playerInfo.reset();
